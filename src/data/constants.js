@@ -141,7 +141,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/D4D3DAQEvOaM8JwjnOQ/image-scale_191_1128/image-scale_191_1128/0/1731593128213/the_developers_arena_cover?e=2147483647&v=beta&t=MVA9O4l7SPxVJG5qg-mPujuoeZ-IIkiLoKb0yGBHREo",
+    img: "https://www.thedevelopersarena.com/assets/logo/logo.png",
     role: "Web Developer Intern",
     company: "The Developers Arena Pvt. Ltd.",
     date: "Feb 2025 - Ongoing",
@@ -157,7 +157,7 @@ export const experiences = [
   },
   {
     id: 0,
-    img: "https://media.licdn.com/dms/image/v2/D563DAQFa4LL7xPu-8A/image-scale_191_1128/image-scale_191_1128/0/1708417892628/koyya_enterprises_private_limited_cover?e=2147483647&v=beta&t=UQyhN7Pbz_Yi-6KIAAvvnmZxcu7ezQbAIDyItlNOcAM",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Q6Bx91LmoCKX71hNv6q9VdHNtmPc-HOBIQ&s",
     role: "Devops Engineer Intern",
     company: "Koyya",
     date: "JAN 2025 - Present",
@@ -209,12 +209,12 @@ export const education = [
 export const projects = [
   {
     id: 9,
-    title: "Reg-Flask",
+    title: "Registration-Flask",
     date: "Jan 2025 - Jan 2025",
     description:
-      "Reg-Flask is a web application designed to streamline task management and enhance interface for Registration . \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
+      "Reg-Flask is a web application designed to streamline task management and enhance interface for Registration . ",
     image:
-      "https://private-user-images.githubusercontent.com/148641010/418258901-c3625910-ca73-49c5-b103-5808a54f57a0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA4MTY4MDUsIm5iZiI6MTc0MDgxNjUwNSwicGF0aCI6Ii8xNDg2NDEwMTAvNDE4MjU4OTAxLWMzNjI1OTEwLWNhNzMtNDljNS1iMTAzLTU4MDhhNTRmNTdhMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwMVQwODA4MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMTM3NzM2ZDlhZGI0ZDE3NmNiYTlhZjlhY2I3NDYxNDIyZDBhN2RhZDhkY2U5NzU3MDkxNzAyYmIxNzRkNThmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.eobr76pXUmXxIlTPLWuF-Rj3xzoX5MOLGppdjnStJQg",
+      "https://res.cloudinary.com/da9a6nfeh/image/upload/v1740834013/Screenshot_2025-03-01_at_11.41.50_AM_wblizq.png",
     tags: [
       "HTML",
       "CSS",
@@ -232,7 +232,7 @@ export const projects = [
     description:
       "Developed a web application that allows users to search for food. It is a Full-stack web application to manage restaurant orders effectively. The application allows users to order food.Users can see all the menu in the restaurant and makes an order. It also provides a feature to reserve tables inrestaurant.",
     image:
-      "https://private-user-images.githubusercontent.com/148641010/418261243-e235df94-b6c9-4a51-9470-f0ebe803c176.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDA4MTk1ODUsIm5iZiI6MTc0MDgxOTI4NSwicGF0aCI6Ii8xNDg2NDEwMTAvNDE4MjYxMjQzLWUyMzVkZjk0LWI2YzktNGE1MS05NDcwLWYwZWJlODAzYzE3Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMwMVQwODU0NDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZGMwMTgwM2UyODM2YTg1YzkzNjU4YWQ5ZDhlZjUzNzdmY2M2YjgzNjE5ZjM2OWUwZWEwNTJmYjE3ZWE0YmQ1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.g6kuVkZcDDa8rpbwsDUzvT6Gfpxkj7orFzHSN6WRfdA",
+      "https://res.cloudinary.com/da9a6nfeh/image/upload/v1740833999/Screenshot_2025-03-01_at_2.15.01_PM_2_ycqesj.png",
     tags: [ "HTML","CSS","JAVASCRIPT",],
     category: "web app",
     github: "",
@@ -241,7 +241,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Spy",
+    title: "vexa",
     date: "Oct 2024 - Present",
     description:
       "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
@@ -256,8 +256,8 @@ export const projects = [
       "NodeMailer",
     ],
     category: "web app",
-    github: "",
-    webapp: "",
+    github: "https://github.com/rishavchanda/Project-Management-App",
+    webapp: "https://vexa-app.netlify.app/",
   },
   
     
