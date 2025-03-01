@@ -155,24 +155,7 @@ export const experiences = [
     
     ],
   },
-  {
-    id: 0,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Q6Bx91LmoCKX71hNv6q9VdHNtmPc-HOBIQ&s",
-    role: "Devops Engineer Intern",
-    company: "Koyya",
-    date: "JAN 2025 - Present",
-    desc: "Managing DevOps, and streamlining the process with automation.",
-    skills: [
-      
-      "GIT",
-      "GITHUB",
-      "ACTIONS",
-      "Docker",
-      "KUBERNATIES",
-      "AWS",
-      "EC2",
-    ],
-  },
+  
   
 ];
 
