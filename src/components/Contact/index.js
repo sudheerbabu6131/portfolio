@@ -61,64 +61,95 @@ const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   background-color: ${({ theme }) => theme.card};
-  padding: 32px;
+  padding: 40px; /* Increase padding */
   border-radius: 16px;
   box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
-  gap: 12px;
-`
+  gap: 16px; /* Increase gap between elements */
+  align-items: center; /* Center content */
+`;
+
 
 const ContactTitle = styled.div`
   font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-`
-
-const ContactInput = styled.input`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactInputMessage = styled.textarea`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactButton = styled.input`
-  width: 100%;
-  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  padding: 13px 16px;
-  margin-top: 2px;
-  border-radius: 12px;
-  border: none;
-  color: ${({ theme }) => theme.text_primary};
-  font-size: 18px;
-  font-weight: 600;
-`
+  width: 100%;
+  max-width: 500px;
+`;
+
+const Name = styled.h2`
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff8c00; /* Orange */
+  text-shadow: 2px 2px 8px rgba(255, 140, 0, 0.5);
+`;
+
+const Email = styled.a`
+  font-size: 20px;
+  color: #00bcd4; /* Cyan */
+  text-decoration: none;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #0288d1;
+    text-decoration: underline;
+  }
+`;
+
+const Phone = styled.p`
+  font-size: 20px;
+  color: #4caf50; /* Green */
+  font-weight: bold;
+`;
+
+
+
+// const ContactInput = styled.input`
+//   flex: 1;
+//   background-color: transparent;
+//   border: 1px solid ${({ theme }) => theme.text_secondary};
+//   outline: none;
+//   font-size: 18px;
+//   color: ${({ theme }) => theme.text_primary};
+//   border-radius: 12px;
+//   padding: 12px 16px;
+//   &:focus {
+//     border: 1px solid ${({ theme }) => theme.primary};
+//   }
+// `
+
+// const ContactInputMessage = styled.textarea`
+//   flex: 1;
+//   background-color: transparent;
+//   border: 1px solid ${({ theme }) => theme.text_secondary};
+//   outline: none;
+//   font-size: 18px;
+//   color: ${({ theme }) => theme.text_primary};
+//   border-radius: 12px;
+//   padding: 12px 16px;
+//   &:focus {
+//     border: 1px solid ${({ theme }) => theme.primary};
+//   }
+// `
+
+// const ContactButton = styled.input`
+//   width: 100%;
+//   text-decoration: none;
+//   text-align: center;
+//   background: hsla(271, 100%, 50%, 1);
+//   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+//   background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+//   background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
+//   padding: 13px 16px;
+//   margin-top: 2px;
+//   border-radius: 12px;
+//   border: none;
+//   color: ${({ theme }) => theme.text_primary};
+//   font-size: 18px;
+//   font-weight: 600;
+// `
 
 
 
@@ -145,14 +176,19 @@ const Contact = () => {
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
+        <Desc>Feel free to reach out to me for any questions </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
+          <ContactTitle>
+  <Name>Barre Sudheer Babu</Name>
+  <Phone>📞 7075951495</Phone>
+  <Email href="mailto:sudheer.barre@sasi.ac.in">✉️ sudheer.barre@sasi.ac.in</Email>
+</ContactTitle>
+
+          {/* <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value="Send" /> */}
         </ContactForm>
         <Snackbar
           open={open}
